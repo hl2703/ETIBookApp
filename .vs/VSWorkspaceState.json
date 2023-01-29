@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BooksMicroservice",
+    "\\BooksMicroservice\\Controllers",
+    "\\BooksMicroservice\\DAL",
+    "\\BooksMicroservice\\images",
+    "\\BooksMicroservice\\Models",
+    "\\BooksMicroservice\\Views",
+    "\\BooksMicroservice\\Views\\Home"
+  ],
+  "SelectedNode": "\\BooksMicroservice\\images",
+  "PreviewInSolutionExplorer": false
+}

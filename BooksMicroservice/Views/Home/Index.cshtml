@@ -1,0 +1,9 @@
+﻿@model IEnumerable<BrowseBook.Models.Book>
+
+@{
+    ViewData["Title"] = "View Book";
+}
+
+<h4 class="PageTitle">View Books</h4>
+
+<partial name="~/Views/Home/_ViewBooks.cshtml" model="@Model" />
