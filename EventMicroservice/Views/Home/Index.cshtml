@@ -1,0 +1,9 @@
+﻿@model IEnumerable<EventMicroservice.Models.BookEvent>
+
+@{
+    ViewData["Title"] = "View Events";
+}
+
+<h4 class="PageTitle">View Events</h4>
+
+<partial name="~/Views/Home/_ViewEvents.cshtml" model="@Model" />

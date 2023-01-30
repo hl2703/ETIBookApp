@@ -1,0 +1,57 @@
+﻿@model EventMicroservice.Models.BookEvent
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<br>
+
+<hr />
+
+<section class="holder">
+
+
+    <div class="split">
+        <img src="https://picsum.photos/400/400" />
+        <br />
+        <br />
+        <a asp-controller="Home" asp-action="Index">Back to Events Page</a>
+    </div>
+
+    <div class="split">
+        <fieldset class="FormContent">
+            <div class="form-group row">
+                <label asp-for="EventName"
+                       class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-9 form-control-plaintext">
+                    @Html.Display("EventName")
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="EventDescription" class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-9 form-control-plaintext">
+                    @Html.Display("EventDescription")
+                </div>
+            </div>
+        
+            <div class="form-group row">
+                <label asp-for="StartDate"
+                       class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-9 form-control-plaintext">
+                    @Html.Display("StartDate")
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="EndDate"
+                       class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-9 form-control-plaintext">
+                    @Html.Display("EndDate")
+                </div>
+            </div>
+            
+
+        </fieldset>
+    </div>
+
+
+</section>
