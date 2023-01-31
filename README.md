@@ -29,7 +29,8 @@ Each of the features are managed with a distinct microservice. Each microservice
 -	High cohesion: Each microservice should perform only one main function and do it well. Having high cohesion requires that the design of the service should follow the single responsibility principle. Each microservice is designed so that it has minimal dependencies on other microservice. For example, book  microservice should only cover management of books and not include event functions.
 
 Architecture Diagram
-![image](https://user-images.githubusercontent.com/73155822/215686022-bf4e9e1e-25de-41c8-bcb5-d45c2c7026fe.png)
+![image](https://user-images.githubusercontent.com/73155822/215783002-4d4d96b0-989f-4e2e-bdeb-d0a66394008f.png)
+
 
 Microservices
 - consists of small, individually deployable services performing different operations.
@@ -81,6 +82,7 @@ Events
 - You can check the event start date, end date and description of the event.
 
 References:
+
 https://cloud.google.com/appengine/docs/flexible/testing-and-deploying-your-app?tab=python#troubleshooting
 https://learn.microsoft.com/en-us/training/modules/microservices-aspnet-core/3-solution-architecture
 https://dotnettutorials.net/lesson/microservices-using-asp-net-core/
