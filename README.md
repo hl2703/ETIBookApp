@@ -27,4 +27,52 @@ Each of the features are managed with a distinct microservice. Each microservice
 -	Loosely coupled design: A loosely coupled service depends minimally on other services. Microservices are loosely coupled if you can change one service without requiring other services to be updated at the same time. For example, bugs in the books microservice can be fixed and updated without having to modify the events microservice.
 -	High cohesion: Each microservice should perform only one main function and do it well. Having high cohesion requires that the design of the service should follow the single responsibility principle. Each microservice is designed so that it has minimal dependencies on other microservice. For example, book  microservice should only cover management of books and not include event functions.
 
+Architecture Diagram
 ![image](https://user-images.githubusercontent.com/73155822/215686022-bf4e9e1e-25de-41c8-bcb5-d45c2c7026fe.png)
+
+Microservices
+- consists of small, individually deployable services performing different operations.
+- focus on a single business domain that can be implemented as fully independent deployable services
+- Using domain driven design
+- This architecture enables each microservice to implement the data store that is best optimized for its workload, storage needs, and read/write patterns.
+
+As seen in the diagram, the microservices are:
+- Events  
+- Books 
+
+Communications between microservices are done with lightweight mechanisms-REST API calls
+
+Databases for storing data for each microservice:
+- Book database: Stores book details such as ISBN, Name, Author, Category and Description
+- Event Database: Stores event details such EventID, EventName, StartDate, EndDate, EventDescription
+
+API gateway
+- The microservices are accessible to clients via the API gateway. 
+- Among other advantages, API gateways enhance security and decouple back-end services from individual clients.
+
+Ocelot
+Ocelot is aimed at people using .NET running a micro-services / service orientated architecture who need a unified point of entry into their system. The ocelot.json file specifies configuration of the API Gateway. There are two sections to the configuration- an array of ReRoutes and a GlobalConfiguration.
+
+Containers
+Containers are the smallest compute unit in a cloud-native application. By containerizing the microservices, cloud-native applications run independently of the underlying operating system and hardware. The books microservice is deployed in one docker container and the events microservice in another docker container. 
+
+Instructions for setting up and running the program
+- Clone the files in the github repository. 
+- Open the files using Visual Studio. 
+- Create a new project for each of the folders and copy the respective files into the project folder
+- Ensure that the databases has been set up using the SQL scripts. 
+- Click the run button to start up the program. 
+
+Setting up SQL database
+- Open the sql files using MySQL or Microsoft SQL server management studio. 
+- Execute each file to set up the database table.
+
+Book Catalogue 
+- View all books in the library using the book catalogue. 
+- To see more information about the book and check its availability, click on the ‘Details’ button on the row of the book record. 
+- The book details will be displayed.
+
+Events
+- View all ongoing and upcoming events at the library. 
+- To see more information about an event, click on the event name. 
+- You can check the event start date, end date and description of the event.
