@@ -1,5 +1,5 @@
 Create Database myEventsDB
-
+use myEventsDB;
 CREATE TABLE myEvents
 (
   EventID				int NOT NULL,
