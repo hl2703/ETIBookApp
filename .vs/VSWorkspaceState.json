@@ -2,12 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\BooksMicroservice",
-    "\\BooksMicroservice\\Controllers",
-    "\\BooksMicroservice\\DAL",
-    "\\BooksMicroservice\\images",
-    "\\BooksMicroservice\\Models",
-    "\\BooksMicroservice\\Views",
-    "\\BooksMicroservice\\Views\\Home"
+    "\\BookWebAPI",
+    "\\BookWebAPI\\Controllers",
+    "\\EventMicroservice",
+    "\\EventMicroservice\\Controllers",
+    "\\EventMicroservice\\DAL",
+    "\\EventMicroservice\\Views",
+    "\\EventMicroservice\\Views\\Shared",
+    "\\Properties"
   ],
   "PreviewInSolutionExplorer": false
 }
