@@ -1,15 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BooksMicroservice",
-    "\\BookWebAPI",
-    "\\BookWebAPI\\Controllers",
-    "\\EventMicroservice",
-    "\\EventMicroservice\\Controllers",
-    "\\EventMicroservice\\DAL",
-    "\\EventMicroservice\\Views",
-    "\\EventMicroservice\\Views\\Shared",
-    "\\Properties"
+    "\\BookAppAPIGateway",
+    "\\BookAppAPIGateway\\bin\\Release",
+    "\\BookAppAPIGateway\\bin\\Release\\net6.0",
+    "\\EventWebAPI\\Controllers",
+    "\\EventWebAPI\\Properties"
   ],
+  "SelectedNode": "\\BookAppAPIGateway",
   "PreviewInSolutionExplorer": false
 }
