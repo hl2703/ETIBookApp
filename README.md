@@ -1,6 +1,7 @@
 # ETIBookApp
 
-BookApp is a simple library web application which allows users to view the book catalogue and events in the library. 
+BookApp is a simple library web application which allows users to view the book catalogue and events in the library.
+
 Main Features:
 
 1a. View All Books
@@ -50,7 +51,7 @@ API gateway
 - The microservices are accessible to clients via the API gateway. 
 - Among other advantages, API gateways enhance security and decouple back-end services from individual clients.
 
-Ocelot
+
 Ocelot is aimed at people using .NET running a micro-services / service orientated architecture who need a unified point of entry into their system. The ocelot.json file specifies configuration of the API Gateway. There are two sections to the configuration- an array of ReRoutes and a GlobalConfiguration.
 
 Containers
