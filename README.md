@@ -55,7 +55,9 @@ API gateway
 Ocelot is aimed at people using .NET running a micro-services / service orientated architecture who need a unified point of entry into their system. The ocelot.json file specifies configuration of the API Gateway. There are two sections to the configuration- an array of ReRoutes and a GlobalConfiguration.
 
 Containers
-Containers are the smallest compute unit in a cloud-native application. By containerizing the microservices, cloud-native applications run independently of the underlying operating system and hardware. The books microservice is deployed in one docker container and the events microservice in another docker container. 
+- Containers are the smallest compute unit in a cloud-native application. 
+- By containerizing the microservices, cloud-native applications run independently of the underlying operating system and hardware. 
+- The books microservice is deployed in one docker container and the events microservice in another docker container. 
 
 Instructions for setting up and running the program
 - Clone the files in the github repository. 
@@ -77,3 +79,17 @@ Events
 - View all ongoing and upcoming events at the library. 
 - To see more information about an event, click on the event name. 
 - You can check the event start date, end date and description of the event.
+
+References:
+https://cloud.google.com/appengine/docs/flexible/testing-and-deploying-your-app?tab=python#troubleshooting
+https://learn.microsoft.com/en-us/training/modules/microservices-aspnet-core/3-solution-architecture
+https://dotnettutorials.net/lesson/microservices-using-asp-net-core/
+https://www.c-sharpcorner.com/article/building-api-gateway-using-ocelot-in-asp-net-core/
+https://cloud.google.com/load-balancing/docs/load-balancing-overview
+https://cloud.google.com/traffic-director
+https://www.freecodecamp.org/news/an-awesome-guide-on-how-to-build-restful-apis-with-asp-net-core-87b818123e28/
+https://www.c-sharpcorner.com/article/building-api-gateway-using-ocelot-in-asp-net-core/
+https://www.twilio.com/blog/containerize-your-aspdotnet-core-application-and-sql-server-with-docker
+https://www.3pillarglobal.com/insights/develop-microservices-net-core-docker/
+
+
