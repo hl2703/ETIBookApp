@@ -50,10 +50,12 @@ Databases for storing data for each microservice:
 
 API gateway
 - The microservices are accessible to clients via the API gateway. 
-- Among other advantages, API gateways enhance security and decouple back-end services from individual clients.
+- API gateways provide the following benefits:
+1. Better isolation: An API Gateway provides isolation by preventing direct access to internal concerns. Additionally, an API Gateway enables you to add more microservices or change boundaries without impacting the external consumers.
+2. Improved security: An API Gateway provides a security layer for your microservices that can help prevent attack vectors such as SQL Injection, Denial-of-Service (DoS), etc.
+3. Reduced complexity: Microservices have specific common concerns. An API Gateway can eliminate code duplication hence reducing the effort required to create these components.
 
-
-Ocelot is aimed at people using .NET running a micro-services / service orientated architecture who need a unified point of entry into their system. The ocelot.json file specifies configuration of the API Gateway. There are two sections to the configuration- an array of ReRoutes and a GlobalConfiguration.
+Ocelot is a lightweight, open-source, scalable, and fast API Gateway based on .NET Core and specially designed for microservices architecture. It provides a unified point of entry into the system. The ocelot.json file specifies configuration of the API Gateway. There are two sections to the configuration- an array of ReRoutes and a GlobalConfiguration.
 
 Containers
 - Containers are the smallest compute unit in a cloud-native application. 
@@ -84,14 +86,25 @@ Events
 References:
 
 https://cloud.google.com/appengine/docs/flexible/testing-and-deploying-your-app?tab=python#troubleshooting
+
 https://learn.microsoft.com/en-us/training/modules/microservices-aspnet-core/3-solution-architecture
+
 https://dotnettutorials.net/lesson/microservices-using-asp-net-core/
+
 https://www.c-sharpcorner.com/article/building-api-gateway-using-ocelot-in-asp-net-core/
+
 https://cloud.google.com/load-balancing/docs/load-balancing-overview
+
 https://cloud.google.com/traffic-director
+
 https://www.freecodecamp.org/news/an-awesome-guide-on-how-to-build-restful-apis-with-asp-net-core-87b818123e28/
+
 https://www.c-sharpcorner.com/article/building-api-gateway-using-ocelot-in-asp-net-core/
+
 https://www.twilio.com/blog/containerize-your-aspdotnet-core-application-and-sql-server-with-docker
+
 https://www.3pillarglobal.com/insights/develop-microservices-net-core-docker/
+
+https://auth0.com/blog/implementing-api-gateway-in-aspnet-core-with-ocelot/
 
 
